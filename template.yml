@@ -18,7 +18,6 @@ Parameters:
   AcmCertArn:
     Type: String
     Description: ARN of the Amazon Certificate Manager cert to use for SSL
-    Default: arn:aws:acm:us-east-1:268919435141:certificate/62302602-c86e-4f88-a272-5a855acd136f
 
 Resources:
   # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
@@ -56,8 +55,6 @@ Resources:
           - Sid: GithubActionAccess
             Effect: Allow
             Action: "s3:GetObject"
-            Principal:
-              AWS: "268919435141"
             Principal:
               AWS:
                 !Join [
