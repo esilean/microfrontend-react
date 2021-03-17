@@ -8,8 +8,8 @@ const devConfig = {
     devServer: {
         port: 8081,
         historyApiFallback: {
-            index: 'index.hmtl'
-        }
+            index: 'index.html'
+        },
     },
     plugins: [
         new ModuleFederationPlugin({
